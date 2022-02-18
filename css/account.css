@@ -1,0 +1,379 @@
+
+.tab-content .card-content.grid-container.i-account{
+  grid-template-columns: 20% auto;
+  grid-template-rows: 0.25fr 1.75fr;
+  grid-template-areas:
+    "left-top right-top"
+    "left-bottom right-bottom";
+}
+
+.card-singel.left-top {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.card-singel.left-top .avatar.small {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 5px solid var(--sub-color);
+  transition: border 0.4s ease;
+}
+
+.card-singel.left-top .avatar-container .modal-btn {
+  color: var(--text-grey);
+  text-decoration: underline;
+}
+
+.card-singel.left-top .avatar-container .modal-btn:hover {
+  color: var(--main-color);
+}
+
+.card-singel.left-top .avatar-container .modal-content,
+.card-singel.left-top .avatar-container .modal-backdrop {
+  display: none;
+  visibility: hidden;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-singel.left-top .avatar-container .modal-close span:hover {
+  color: var(--sub-color);
+}
+
+.card-singel.left-top .avatar-container .avatar {
+  margin-top: 2.5rem;
+  width: 400px;
+  height: 400px;
+  border: 5px solid var(--sub-color);
+  border-radius: 10px;
+}
+
+.modal-content div {
+  text-decoration: underline;
+  color: var(--text-grey);
+}
+
+.modal-content h2 {
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--text-sub);
+}
+
+.modal-content hr {
+  color: var(--text-menu);
+}
+
+.modal-content-btn {
+  text-align: center;
+  cursor: pointer;
+  bottom: 35px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 15px;
+  height: 44px;
+  transition: all 0.4s ease;
+}
+
+.modal-content-btn.upload {
+  position: absolute;
+  left: 30px;
+  background: var(--main-color);
+  color: #fff;
+  width: 140px;
+}
+
+.modal-content-btn.ok {
+  position: absolute;
+  right: 130px;
+  background: var(--sub-color);
+  color: black;
+  width: 110px;
+}
+
+.modal-content-btn.out {
+  position: absolute;
+  background: var(--text-grey);
+  color: #fff;
+  width: 90px;
+  right: 30px;
+}
+
+.modal-content-btn:hover {
+  color: var(--sub-color);
+  background: var(--main-color);
+}
+
+.card-singel.left-top .avatar-container #modal-toggle-1:checked ~ .modal-backdrop {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  visibility: visible;
+  opacity: 1;
+}
+
+.card-singel.left-top .avatar-container #modal-toggle-1:checked ~ .modal-content {
+  display: block;
+  opacity: 1;
+ 
+  max-width: 600px;
+  width: 600px;
+  height: 680px;
+  padding: 10px 30px;
+  position: fixed;
+  left: calc(50% - 300px);
+  top: 12%;
+  border-radius: 10px;
+  pointer-events: auto;
+  cursor: auto;
+  visibility: visible;
+}
+
+.card-singel.left-top div:last-child {
+  padding-top: 15px;
+}
+
+.card-singel.left-top div:last-child span {
+  color: var(--text-grey);
+}
+
+.card-singel.left-top .avatar.small:hover {
+  border: 5px solid var(--text-menu);
+}
+
+
+
+.card-singel.right-top .account-grid {
+  margin-left: 1.5rem;
+  font-size: 1rem;
+}
+
+.card-singel.right-top .account-grid td {
+  font-size: 1rem;
+}
+.card-singel.right-top .account-grid td:not(:first-child) {
+  padding-left: 5rem;
+}
+.card-singel.right-top .account-grid input[type="text"],
+.card-singel.right-top .account-grid input[type="password"] {
+  width: 80%;
+}
+.card-singel.right-top .account-grid input[type="button"]:hover {
+  background: var(--main-color);
+}
+
+.card-singel.right-bottom .infor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.card-singel.right-bottom .infor-grid .content {
+  border-right: 1px solid var(--text-sub);
+}
+
+.card-singel.right-bottom .infor-grid .content:last-child {
+  border-right: none;
+}
+
+.card-singel.right-bottom .infor-grid .content {
+  font-size: 0.85rem;
+}
+
+.card-singel.right-bottom .content p {
+  display: block;
+}
+
+.card-singel.right-bottom .content p input {
+  display: flex;
+  width: 95%;
+}
+
+.card-singel.right-bottom::-webkit-scrollbar-track {
+  background: visible !important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.card-singel.right-bottom::-webkit-scrollbar-thumb {
+  background: var(--text-menu);
+  border-radius: 20px 20px 20px 20px;
+}
+
+.tab-content .recent-grid.security {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 20% auto;
+  height: calc(100vh - 380px);
+  padding: 1rem;
+}
+
+.security.left .security-tab > label {
+  display: block;
+  margin-bottom: 5px;
+  padding: 12px 15px;
+  background: var(--main-color);
+  color: var(--sub-color);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.4s;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.security.left .security-tab:first-child {
+  display: none;
+}
+
+.security.left .security-tab > label:hover {
+  background: var(--sub-color);
+  color: var(--main-color);
+}
+
+.recent-grid.security .security.right {
+  overflow: auto;
+  border-radius: 10px;
+  background: var(--sub-trans);
+  border: 1px solid var(--sub-color);
+  border-radius: 10px;
+}
+
+#tab-4:checked ~ .security.right .secur-content.t-4,
+#tab-5:checked ~ .security.right .secur-content.t-5,
+#tab-6:checked ~ .security.right .secur-content.t-6,
+#tab-7:checked ~ .security.right .secur-content.t-7 {
+  display: block;
+}
+
+#tab-5:checked ~ .security.left ul li .tab-5,
+#tab-6:checked ~ .security.left ul li .tab-6,
+#tab-7:checked ~ .security.left ul li .tab-7 {
+   background: var(--sub-color);
+  color: var(--main-color);
+}
+
+.security.right .secur-content {
+  display: none;
+}
+
+.security.right .secur-content .card-content {
+  margin-top: 1.5rem;
+  margin-left: 2.5rem;
+}
+
+.security.right .secur-content .card-content small {
+  color: var(--text-grey);
+}
+
+.security.right .secur-content .card-content form {
+  width: 60%;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.25fr 1fr 1fr;
+  grid-template-areas:
+    "text-0 text-0 text-0"
+    "text-1 text-1 bnt-1"
+    "bnt-2 bnt-2 bnt-2";
+  grid-gap: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.security.right .secur-content .card-content .level-security {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 20% auto;
+  color: var(--main-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--main-color);
+  margin-top: 2.5rem;
+  padding-left: 8rem;
+  margin-left: -3rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 2px solid var(--text-pink);
+}
+
+.level-security h4 {
+  color: var(--text-grey);
+  width: 140px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 20px solid rgb(255, 187, 0);
+  border-radius: 100% 100% 100% 100%;
+}
+
+.level-security a span {
+  font-size: 0.75rem !important;
+  padding-bottom: 0.75rem;
+}
+
+.level-security a .la-exclamation-circle {
+  color: red;
+}
+.level-security a .la-check-circle {
+  color: green;
+}
+.level-security a span:last-child {
+  color: black;
+}
+
+.level-security a .la-check-circle ~ span:last-child {
+  color: var(--text-grey);
+}
+
+.security.right .secur-content .card-content .history-security {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.security.right .secur-content .card-content span {
+  grid-area: text-0;
+  font-size: 1.5rem;
+}
+
+.security.right .secur-content .card-content span span {
+  font-size: 1.25rem;
+  text-transform: lowercase;
+}
+.security.right .secur-content .card-content .text-1 {
+  grid-area: text-1;
+}
+.security.right .secur-content .card-content .bnt-1 {
+  grid-area: bnt-1;
+  background-color: #fff;
+  border: 1px solid var(--text-menu);
+}
+.security.right .secur-content .card-content .bnt-1:hover {
+  background-color: var(--main-color);
+  border: 1px solid var(--text-menu);
+  color: #fff;
+}
+.security.right .secur-content .card-content .bnt-2 {
+  grid-area: bnt-2;
+  background-color: var(--sub-color);
+}

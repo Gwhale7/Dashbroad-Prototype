@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://img.icons8.com/small/24/000000/barcode.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/prototype.css" />
+    <link rel="stylesheet" href="css/detail.css" />
+    <link rel="stylesheet" href="css/account.css" />
+    <title>Prototype Home</title>
+  </head>
+  <body>
+    <input type="checkbox" id="nav-toggle" style="display: none" checked />
+
+    
+    <div class="sidebar">
+      <h2>
+        <label class="sidebar-brand" for="nav-toggle">
+          <span class="las la-bars"></span>
+          <span class="las la-barcode"></span>
+          <span>TheChosen</span>
+        </label>
+      </h2>
+
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <!-- <a href="home.html" class="active"> -->
+            <a href="home.html">
+              <span class="las la-home"></span>
+
+              <span>Trang Chủ</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="orders.html">
+              <span class="las la-shopping-bag"></span>
+              <span>Quản Lý Đơn Hàng</span>
+            </a>
+          </li>
+          <!-- <input type="checkbox" id="btn-1" style="display: none" checked /> -->
+          <li>
+            <a href="products.html">
+              <span class="las la-receipt"></span>
+              <span>Quản Lý Sản Phẩm</span>
+            </a>
+          </li>
+           <li>
+            <a href="">
+              <span class="las la-user"></span>
+              <span>Quản Lý Tài Khoản</span>
+            </a>
+          </li>
+           <li>
+            <a href="">
+              <span class="las la-chart-pie"></span>
+              <span>Thống Kê</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <label class="modal-backdrop1" for="nav-toggle"></label>
+
+    <div class="main-content">
+      <header>
+        <h2>
+          <label class="sidebar-brand" for="nav-toggle">
+            <span class="las la-bars"></span>
+            <span class="las la-barcode"></span>
+            <span>TheChosen</span>
+          </label>
+        </h2>
+
+        <input type="checkbox" id="btn-5" style="display: none" />
+        <label class="user-wrapper" for="btn-5">
+          <label class="modal-backdrop" for="btn-5"></label>
+          <img
+            src="img/avatar/yuna-face.jpg"
+            width="40px"
+            height="40px"
+            alt=""
+          />
+          <div>
+            <h4>Shin Yuna</h4>
+            <small>Super admin</small>
+          </div>
+          <ul>
+            <li>
+              <a href="account.html">
+                <span class="las la-info-circle"></span>
+                <span>Thông tin</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="index.html">
+                <span class="las la-sign-out-alt"></span>
+                <span>Đăng xuất</span>
+              </a>
+            </li>
+          </ul>
+        </label>
+      </header>
+
+      <main>
+        <div class="main-board">
+          <div class="tabbed account">
+            <input type="radio" id="tab1" name="css-tabs" checked />
+            <input type="radio" id="tab2" name="css-tabs" />
+            <input type="radio" id="tab3" name="css-tabs" />
+
+            <ul class="tabs">
+              <li class="tab">
+                <label for="tab1">Thông tin tài khoản</label>
+              </li>
+              <li class="tab">
+                <label for="tab2">Bảo mật tài khoản</label>
+              </li>
+              <li class="tab">
+                <label for="tab3">FAQ</label>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="card-content grid-container i-account">
+                <div class="card-singel left-top">
+                  <img
+                    class="avatar small"
+                    src="img/avatar/yuna-face.jpg"
+                    alt=""
+                  />
+                  <div class="avatar-container">
+                    <input type="checkbox" id="modal-toggle-1" style="display: none" />
+
+                    <label class="modal-btn" for="modal-toggle-1">
+                      <small>
+                        <span class="las la-edit"></span>Đổi ảnh đại diện</small
+                      >
+                    </label>
+
+                    <label class="modal-backdrop" for="modal-toggle-1"></label>
+
+                    <div class="modal-content">
+                      <h2>Chọn ảnh đại diện</h2>
+                      <img
+                        class="avatar"
+                        src="img/avatar/yuna-face.jpg"
+                        alt=""
+                      />
+                      <div>
+                        <small
+                          >*kích thước ảnh dưới 5mb có định dạng '.jpg'.</small
+                        >
+                      </div>
+                      <label class="modal-content-btn upload" for=""
+                        >Tải ảnh lên</label
+                      >
+                      <label class="modal-content-btn ok" for="modal-toggle-1"
+                        >Đồng ý</label
+                      >
+                      <label class="modal-content-btn out" for="modal-toggle-1"
+                        >Thoát</label
+                      >
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3>Shin Yuna</h3>
+                    <span>Super Admin</span>
+                  </div>
+                </div>
+                <div class="card-singel right-top">
+                  <div class="card-header">
+                    <h3>Thông tin tài khoản</h3>
+                  </div>
+                  <div class="account-grid">
+                    <table width="100%">
+                      <tbody>
+                        <tr>
+                          <td>Tên tài khoản:</td>
+                          <td>
+                            <input
+                              type="text"
+                              placeholder="shinyuna9113"
+                              value=""
+                              disabled
+                            />
+                          </td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td>Mật khẩu:</td>
+                          <td>
+                            <input
+                              type="password"
+                              value="**********"
+                              disabled
+                            />
+                            <a href="">
+                              <input
+                                type="button"
+                                class="main-button"
+                                value="Thay đổi"
+                              />
+                            </a>
+                          </td>
+                          <td>Lần cuối cập nhật: 28/10/2021</td>
+                        </tr>
+                        <tr>
+                          <td>Mail khôi phục:</td>
+                          <td>
+                            <input
+                              type="text"
+                              placeholder="shinyuna.9113@gmail.com"
+                              value=""
+                              disabled
+                            />
+                            <a href="">
+                              <input
+                                type="button"
+                                class="main-button"
+                                value="Thay đổi"
+                              />
+                            </a>
+                          </td>
+
+                          <td>Đã xác nhận</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="card-singel right-bottom">
+                  <div class="card-header">
+                    <h3>Thông tin cá nhân</h3>
+                  </div>
+                  <div class="infor-grid">
+                    <div class="content">
+                      <p>
+                        Mã nhân viên:
+                        <input
+                          type="text"
+                          placeholder="NT001"
+                          value=""
+                          disabled
+                        />
+                      </p>
+                      <p>
+                        Bộ phận:
+                        <input
+                          type="text"
+                          placeholder="Super boss"
+                          value=""
+                          disabled
+                        />
+                      </p>
+                      <p>
+                        Họ và tên:
+                        <input
+                          type="text"
+                          placeholder="Shin Yuna"
+                          value=""
+                          disabled
+                        />
+                      </p>
+                      <p>
+                        Giới tính:
+                        <input type="text" placeholder="Nữ" value="" disabled />
+                      </p>
+                      <p>
+                        Số điện thoại:
+                        <input
+                          type="text"
+                          placeholder="0123456798"
+                          value=""
+                          disabled
+                        />
+                      </p>
+                    </div>
+                    <div class="content">
+                      <p>
+                        Ngày Sinh:<input
+                          type="text"
+                          placeholder="9/11/2003"
+                          value=""
+                          disabled
+                        />
+                      </p>
+                      <p>
+                        Nơi sinh:
+                        <input type="text" placeholder="Mỹ" value="" disabled />
+                      </p>
+                      <p>
+                        CMND:
+                        <input
+                          type="text"
+                          placeholder="0123456798"
+                          value=""
+                          disabled
+                        />
+                      </p>
+                      <p>
+                        Nơi cấp (CMND):
+                        <input
+                          type="text"
+                          placeholder="Tp. Hồ Chí Minh"
+                          value=""
+                          disabled
+                        />
+                      </p>
+                      <p>
+                        Ngày cấp (CMND):
+                        <input
+                          type="text"
+                          placeholder="16/08/2015"
+                          value=""
+                          disabled
+                        />
+                      </p>
+                    </div>
+                    <div class="content">
+                      <p>
+                        Trình độ học vấn:
+                        <input
+                          type="text"
+                          placeholder="Cao đẳng"
+                          value=""
+                          disabled
+                        />
+                      </p>
+                      <p>
+                        Tình trạng hôn nhân:
+                        <input
+                          type="text"
+                          placeholder="Cô đơn"
+                          value=""
+                          disabled
+                        />
+                      </p>
+                      <p>
+                        Ngày đầu đi làm:
+                        <input
+                          type="text"
+                          placeholder="10/10/2021"
+                          value=""
+                          disabled
+                        />
+                      </p>
+                      <p>
+                        Ngày kết thúc thực tập:
+                        <input
+                          type="text"
+                          placeholder="10/12/2021"
+                          value=""
+                          disabled
+                        />
+                      </p>
+                      <p>
+                        Số ngày được nghỉ phép:
+                        <input type="text" placeholder="0 " value="" disabled />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-singel left-bottom"></div>
+              </div>
+            </div>
+            <div class="tab-content">
+              <div class="recent-grid security">
+                <input type="radio" id="tab-4" name="secur-tabs" checked />
+                <input type="radio" id="tab-5" name="secur-tabs" />
+                <input type="radio" id="tab-6" name="secur-tabs" />
+                <input type="radio" id="tab-7" name="secur-tabs" />
+                <div class="security left">
+                  <ul class="security-tabs">
+                    <li class="security-tab">
+                      <label for="tab-4">.</label>
+                    </li>
+                    <li class="security-tab">
+                      <label class="tab-5" for="tab-5">Thay đổi mật khẩu</label>
+                    </li>
+                    <li class="security-tab">
+                      <label class="tab-6" for="tab-6">Thay đổi mail</label>
+                    </li>
+                    <li class="security-tab">
+                      <label class="tab-7" for="tab-7"
+                        >Thay đổi số điện thoại</label
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="security right">
+                  <div class="secur-content t-4">
+                    <div class="card-header">
+                      <h3>Mức Độ Bảo mật</h3>
+                    </div>
+                    <div class="card-content">
+                      <div class="level-security">
+                        <h4>Thấp</h4>
+                        <ul>
+                          <li>
+                            <a href=""
+                              ><span class="las la-exclamation-circle"></span>
+                              <span
+                                >Hành động ngay để tăng cường mức độ bảo mật tài
+                                khoản của bạn.</span
+                              ></a
+                            >
+                          </li>
+                          <li>
+                            <a href=""
+                              ><span class="las la-exclamation-circle"></span>
+                              <span>Mật khẩu của bạn quá yếu.</span></a
+                            >
+                          </li>
+                          <li>
+                            <a href="">
+                              <span class="las la-check-circle"></span>
+                              <span
+                                >Địa chỉ email (ngu****@hotmail.com) đã được xác
+                                nhận.</span
+                              ></a
+                            >
+                          </li>
+                          <li>
+                            <a href=""
+                              ><span class="las la-check-circle"></span>
+                              <span
+                                >Tài khoản của bạn đã liên kết với số điện thoại
+                                (+84 ****3328).</span
+                              ></a
+                            >
+                          </li>
+                          <li>
+                            <a href=""
+                              ><span class="las la-check-circle"></span>
+                              <span
+                                >Bạn đã xác nhận tài khoản với số chứng minh
+                                nhân dân 3318****.</span
+                              ></a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="card-header">
+                      <h3>Lịch Sử Đăng Nhập</h3>
+                      <button>
+                        Hiển thị thêm <span class="las la-arrow-right"> </span>
+                      </button>
+                    </div>
+                    <div class="card-content">
+                      <div class="history-security">
+                        <table width="80%">
+                          <thead>
+                            <tr>
+                              <td>IP</td>
+                              <td>Quốc Gia</td>
+                              <td>Ngày Tháng</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>113.172.167.255</td>
+                              <td>VN</td>
+                              <td>2021-12-06 18:43:58 GMT+7</td>
+                            </tr>
+                            <tr>
+                              <td>113.172.167.255</td>
+                              <td>VN</td>
+                              <td>2021-12-06 18:43:58 GMT+7</td>
+                            </tr>
+                            <tr>
+                              <td>113.172.167.255</td>
+                              <td>VN</td>
+                              <td>2021-12-06 18:43:58 GMT+7</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="secur-content t-5">
+                    <div class="card-header">
+                      <h3>Thay đổi mật khẩu</h3>
+                    </div>
+                    <div class="card-content">
+                      <small>
+                        Ấn nút Lấy mã ở dưới để nhận được mã xác nhận qua tin
+                        nhắn SMS. Lưu ý: Đối với mạng Vietnamobile, quý khách sẽ
+                        nhận được cuộc gọi thoại nhận mã OTP.
+                      </small>
+
+                      <form action="">
+                        <span class="las la-mobile">
+                          <span> +84*****7950</span></span
+                        >
+                        <input
+                          type="text"
+                          placeholder="Mã xác thực"
+                          class="text-1"
+                        />
+                        <input type="button" class="bnt-1" value="Lấy mã" />
+                        <input type="button" class="bnt-2" value="Xác Nhận" />
+                      </form>
+                    </div>
+                  </div>
+                  <div class="secur-content t-6">
+                    <div class="card-header">
+                      <h3>Thay đổi mail</h3>
+                    </div>
+                    <div class="card-content">
+                      <small>
+                        Ấn nút Lấy mã ở dưới để nhận được mã xác nhận qua tin
+                        nhắn SMS. Lưu ý: Đối với mạng Vietnamobile, quý khách sẽ
+                        nhận được cuộc gọi thoại nhận mã OTP.
+                      </small>
+
+                      <form action="">
+                        <span class="las la-mobile">
+                          <span> +84*****7950</span></span
+                        >
+                        <input
+                          type="text"
+                          placeholder="Mã xác thực"
+                          class="text-1"
+                        />
+                        <input type="button" class="bnt-1" value="Lấy mã" />
+                        <input type="button" class="bnt-2" value="Xác Nhận" />
+                      </form>
+                    </div>
+                  </div>
+                  <div class="secur-content t-7">
+                    <div class="card-header">
+                      <h3>Thay đổi số điện thoại</h3>
+                    </div>
+                    <div class="card-content">
+                      <small>
+                        Ấn nút Lấy mã ở dưới để nhận được mã xác nhận qua tin
+                        nhắn mail. Lưu ý: Kiểm tra hộp thư rác.
+                      </small>
+
+                      <form action="">
+                        <span class="las la-envelope">
+                          <span> sh*********13@gmail.com</span></span
+                        >
+                        <input
+                          type="text"
+                          placeholder="Mã xác thực"
+                          class="text-1"
+                        />
+                        <input type="button" class="bnt-1" value="Lấy mã" />
+                        <input type="button" class="bnt-2" value="Xác Nhận" />
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-content">
+              <div class="tab-faq">
+                <div class="card-header">
+                  <h3>The Chosen QA</h3>
+                </div>
+                <div class="faq">
+                  <h4>Q: Làm thế nào để bảo mật tài khoản Chosen của tôi?</h4>
+                  <span
+                    ><span> A: </span>
+
+                    Có một số thao tác bạn có thể thực hiện để đảm bảo an toàn
+                    cho tài khoản của bạn.
+                  </span>
+
+                  <p>
+                    <span class="count-line">
+                      1. Cài đặt một mật khẩu độc nhất và khó đoán, sử dụng kết
+                      hợp giữa chữ cái, số và các ký hiệu.
+                    </span>
+                    <span class="count-line">
+                      2. Không cho ai khác biết mật khẩu. Thay đổi mật khẩu
+                      thường xuyên.
+                    </span>
+                    <span class="count-line">
+                      3. Đăng ký số điện thoại gắn với tài khoản để bật tính
+                      năng xác thực 2 bước khi thay đổi mật khẩu hoặc cập nhật
+                      thông tin.
+                    </span>
+
+                    <span class="count-line">
+                      4. Không cho phép các thiết bị công cộng nhớ thông tin tài
+                      khoản của bạn.
+                    </span>
+                  </p>
+                  <h4>Q: Làm thế nào để tạo một mật khẩu mạnh?</h4>
+                  <p>
+                    A:
+                    <span
+                      >Mật khẩu mạnh giúp ngăn ngừa kẻ gian truy cập vào tài
+                      khoản của bạn, và cần phải khó đoán, khó phá mật khẩu. Mật
+                      khẩu mạnh: Có ít nhất 8 ký tự. Không chưa tên tài khoản,
+                      tên thật hoặc tên tổ chức của bạn. Không bao gồm một cụm
+                      từ hoàn chỉnh. Hoàn toàn khác biệt so với các mật khẩu cũ.
+                      Nên chứa các ký tự in hoa, in thường, số, và các ký tự đặc
+                      biệt.</span
+                    >
+                  </p>
+                  <h4>Q: Chosen sẽ sử dụng email của tôi để làm gì?</h4>
+                  <p>
+                    A:
+                    <span
+                      >Chúng tôi có thể sử dụng email đã xác nhận của bạn để
+                      giúp bạn lấy lại tài khoản trong trường hợp bạn mất mật
+                      khẩu. Chúng tôi cũng có thể sử dụng email này để thông báo
+                      về những hoạt động của tài khoản như thay đổi mật
+                      khẩu,...</span
+                    >
+                  </p>
+                  <h4>Q: Làm thế nào để cập nhật hình ảnh đại diện?</h4>
+                  <p>
+                    A:
+                    <span>
+                      Chỉ cần đăng nhập tài khoản của bạn vào website Chosen
+                      trên máy tính, vào phần "Thông tin tài khoản", ấn "Thay
+                      đổi ảnh đại diện" để chọn hoặc đăng tải hình ảnh mới, rồi
+                      chọn "Áp dụng".</span
+                    >
+                  </p>
+                  <h4>Q: Tôi có thể thay đổi tên tài khoản được không?</h4>
+                  <p>
+                    A:
+                    <span
+                      >Bạn chỉ có thể cài đặt tên tài khoản một lần duy nhất khi
+                      tạo tài khoản. Tên tài khoản không thể thay đổi lại sau
+                      đó.</span
+                    >
+                  </p>
+                  <h4>
+                    Q: Tôi bị mất điện thoại có đăng nhập vào tài khoản Chosen.
+                    Tôi nên làm gì?
+                  </h4>
+                  <p>
+                    A:
+                    <span>
+                      Để ngăn người người khác truy cập vào tài khoản Chosen từ
+                      điện thoại của bạn, hãy liên hệ ngay bộ phận IT để khóa
+                      tạm thời tài khoản và được hướng dẫn bảo vệ tài
+                      khoản.</span
+                    >
+                  </p>
+                  <h4>
+                    Q: Tôi phát hiện một số truy cập lạ từ tài khoản Chosen của
+                    tôi. Tôi nên làm gì?
+                  </h4>
+                  <p>
+                    A:
+                    <span> Hãy báo ngay cho trưởng bộ phận của bạn.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- Optional JavaScript -->
+  </body>
+</html>
