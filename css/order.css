@@ -23,7 +23,7 @@
 }
 
 .order-info-item span:first-child {
-  width: 7.5rem;
+  width: 10rem;
 }
 
 .card-singel.left-bottom .card-body input {
@@ -143,11 +143,14 @@
 .dataTables_scrollBody{
   background-color: var(--sub-trans);
 }
+.n-order .toolbar .sub.t1{
+  display: none;
+}
 
-#modal-toggle-type:checked ~ .modal-content,
-#modal-toggle-supplier:checked ~ .modal-content,
-#modal-toggle-discount:checked ~ .modal-content,
-#modal-toggle-guarantee:checked ~ .modal-content{
+#modal-toggle-t1:checked ~ .modal-content,
+#modal-toggle-t2:checked ~ .modal-content,
+#modal-toggle-t3:checked ~ .modal-content,
+#modal-toggle-t4:checked ~ .modal-content{
   display: block;
 }
 
@@ -210,12 +213,9 @@
   display: flex;
   gap: .5rem;
 }
-#modal-toggle-type:checked ~ .modal-backdrop-3,
-#modal-toggle-supplier:checked ~ .modal-backdrop-3,
-#modal-toggle-discount:checked ~ .modal-backdrop-3,
-#modal-toggle-guarantee:checked ~ .modal-backdrop-3{
+#modal-toggle-t1:checked ~ .modal-backdrop-3,
+#modal-toggle-t2:checked ~ .modal-backdrop-3,
+#modal-toggle-t3:checked ~ .modal-backdrop-3,
+#modal-toggle-t4:checked ~ .modal-backdrop-3{
   display: block;
 }
-
-
-

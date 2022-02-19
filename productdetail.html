@@ -123,7 +123,7 @@
               <li class="tab">
                 <label for="tab1">Cập nhật thông tin sản phẩm</label>
               </li>
-              <li id="modal-toggle-table" class="tab">
+              <li id="modal-toggle-n0-table" class="tab">
                 <label for="tab2">Mô tả sản phẩm</label>
               </li>
               <li class="tab">
@@ -252,9 +252,13 @@
             </div>
             <div class="tab-content">
               <div class="card-singel">
-                <div class="card-body non-header">
-                  <div class="card-table non-header">
-                    <table id="table" class="" style="width: 100%">
+                <div class="card-header">
+                    <h3>Danh sách mô tả chi tiết sản phẩm</h3>
+                  </div>
+                <div class="card-body body-card">
+                  
+                  <div class="card-table">
+                    <table id="table-n0" class="" style="width: 100%">
                       <thead>
                         <tr>
                           <th>STT</th>
@@ -392,53 +396,6 @@
     <!-- Optional JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $("#table").DataTable({
-          info: false,
-          lengthChange: false,
-          paging: false,
-          oLanguage: {
-            sSearch: "",
-          },
-          searching: false,
-          scrollX: true,
-          scrollY: "calc(100vh - 332px)",
-          dom: '<"toolbar">frtip',
-          deferRender: true,
-          scrollCollapse: false,
-        });
-        $("div.toolbar").html(
-          ' <input type="button" class="sub-button" value="Lưu tất cả" />' +
-            ' <input type="button" id="addRow" class="main-button" value="Thêm mới" />' +
-            ' <input type="button" id="delRow" class="main-button" value="Xóa" />'
-        );
-        var t = $("#table").DataTable();
-        $("#addRow").on("click", function () {
-          t.row.add(["", "+", "", "", "", "", ""]).draw(false);
-        });
-
-        // Automatically add a first row of data
-        $("#addRow").click();
-
-        $("#delRow").click(function () {
-          table.rows(".selected").remove().draw(false);
-        });
-        // $("div.toolbar").html(
-        //   "<a  href='detailProduct.html'><input type='button'  value='Thêm sản phẩm mới'></a>"
-        // );
-
-        var table = $("#table").DataTable();
-        $("#table tbody").on("click", "tr", function () {
-          $(this).toggleClass("selected");
-        });
-
-        $("#modal-toggle-table").click(function () {
-          setTimeout(function () {
-            $("#table").DataTable().columns.adjust();
-          }, 1);
-        });
-      });
-    </script>
+    <script src="js/table.js"></script>
   </body>
 </html>

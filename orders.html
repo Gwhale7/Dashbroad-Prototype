@@ -124,51 +124,52 @@
               <li class="tab">
                 <label for="tab1">Bảng tổng hợp đơn hàng</label>
               </li>
-              <li class="tab">
+              <li id="modal-toggle-n0-table" class="tab">
                 <label for="tab2">Tạo đơn hàng mới</label>
               </li>
               <li class="tab">
                 <label for="tab3">FAQ</label>
               </li>
             </ul>
-             <div class="tab-content">
+            <div class="tab-content">
               <div class="card-content grid-container t-order">
                 <div class="card-singel left-top">
                   <div class="card-header">
                     <h3>Danh sách quản lý</h3>
                   </div>
                   <div class="card-body body-card">
-                    <div class="type-container">
+                    <div class="client-container">
                       <input
                         type="checkbox"
-                        id="modal-toggle-type"
+                        id="modal-toggle-t1"
                         style="display: none"
                       />
-                      <label for="modal-toggle-type">
-                        <div id="modal-toggle-table" class="btn-modal">
-                          <span>Loại sản phẩm</span>
+                      <label for="modal-toggle-t1">
+                        <div id="modal-toggle-t1-table" class="btn-modal">
+                          <span>Khách Hàng</span>
                         </div>
                       </label>
                       <label
                         class="modal-backdrop-3"
-                        for="modal-toggle-type"
+                        for="modal-toggle-t1"
                       ></label>
                       <div class="modal-content">
                         <div class="content">
                           <div class="grid-container">
                             <div class="card-singel left-full">
                               <div class="card-header">
-                                <h3>Danh sách loại sản phẩm</h3>
+                                <h3>Danh sách Khách Hàng</h3>
                               </div>
                               <div class="card-body body-card sub">
                                 <div class="card-table">
-                                  <table id="table-sub" style="width: 100%">
+                                  <table id="table-t1-sub" style="width: 100%">
                                     <thead>
                                       <tr>
                                         <th>STT</th>
                                         <th>MÃ</th>
-                                        <th>Tên loại sản phẩm</th>
-                                        <th>NGÀY cập nhật</th>
+                                        <th>Tên KH</th>
+                                        <th>SDT</th>
+                                        <th>NGÀY Đ.Ký</th>
                                       </tr>
                                     </thead>
                                     <tbody></tbody>
@@ -176,123 +177,9 @@
                                       <tr>
                                         <th>STT</th>
                                         <th>MÃ</th>
-                                        <th>Tên loại sản phẩm</th>
-                                        <th>NGÀY cập nhật</th>
-                                      </tr>
-                                    </tfoot>
-                                  </table>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="card-singel right-top">
-                              <div class="card-header">
-                                <h3>Cập nhật</h3>
-                              </div>
-                              <div class="card-body body-card input">
-                                <div class="card-details">
-                                  <div class="detail-inputs">
-
-                                  <div class="detail">
-                                    <div><span>Mã loại:</span></div>
-                                    <input type="text" placeholder="......" />
-                                  </div>
-                                  <div class="detail">
-                                    <div><span>Tên loại sản phẩm:</span></div>
-                                    <input type="text" placeholder="......" />
-                                  </div>
-                                  </div>
-                                  <div class="detail-buttons">
-                                    <input
-                                      type="button"
-                                      class="main-button"
-                                      value="Cập nhật "
-                                    />
-                                    <input
-                                      type="button"
-                                      class="sub-button"
-                                      value="Xóa"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="card-singel right-bottom">
-                              <div class="card-header">
-                                <h3>Thêm mới</h3>
-                              </div>
-                              <div class="card-body body-card input">
-                                <div class="card-details">
-                                  <div class="detail-inputs">
-
-                                  <div class="detail">
-                                    <div><span>Mã loại:</span></div>
-                                    <input type="text" placeholder="......" />
-                                  </div>
-                                  <div class="detail">
-                                    <div><span>Tên loại sản phẩm:</span></div>
-                                    <input type="text" placeholder="......" />
-                                  </div>
-                                  </div>
-                                  <div class="detail-buttons">
-
-                                  <input
-                                    type="button"
-                                    class="main-button"
-                                    value="Thêm mới"
-                                  /></div>
-                                </div>
-                              </div>
-                            </div>
-                            <label class="close-btn" for="modal-toggle-type">
-                              <div class="btn-modal"><span>Đóng</span></div>
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="supplier-container">
-                      <input
-                        type="checkbox"
-                        id="modal-toggle-supplier"
-                        style="display: none"
-                      />
-                      <label for="modal-toggle-supplier">
-                        <div id="modal-toggle-s-table" class="btn-modal">
-                          <span>Nhà sản xuất</span>
-                        </div>
-                      </label>
-
-                      <label
-                        class="modal-backdrop-3"
-                        for="modal-toggle-supplier"
-                      ></label>
-
-                      <div class="modal-content">
-                        <div class="content">
-                          <div class="grid-container">
-                            <div class="card-singel left-full">
-                              <div class="card-header">
-                                <h3>Danh sách nhà sản xuất</h3>
-                              </div>
-                              <div class="card-body body-card sub">
-                                <div class="card-table">
-                                  <table id="table-s-sub" style="width: 100%">
-                                    <thead>
-                                      <tr>
-                                        <th>STT</th>
-                                        <th>MÃ</th>
-                                        <th>Tên nhà sản xuất</th>
-                                        <th>NGÀY cập nhật</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody></tbody>
-                                    <tfoot>
-                                      <tr>
-                                        <th>STT</th>
-                                        <th>MÃ</th>
-                                        <th>Tên nhà sản xuất</th>
-                                        <th>NGÀY cập nhật</th>
+                                        <th>Tên KH</th>
+                                        <th>SDT</th>
+                                        <th>NGÀY Đ.Ký</th>
                                       </tr>
                                     </tfoot>
                                   </table>
@@ -307,11 +194,11 @@
                                 <div class="card-details">
                                   <div class="detail-inputs">
                                     <div class="detail">
-                                      <div><span>Mã nhà sản xuất:</span></div>
+                                      <div><span>Tên khách Hàng:</span></div>
                                       <input type="text" placeholder="......" />
                                     </div>
                                     <div class="detail">
-                                      <div><span>Tên nhà sản xuất:</span></div>
+                                      <div><span>SDT:</span></div>
                                       <input type="text" placeholder="......" />
                                     </div>
                                   </div>
@@ -338,11 +225,11 @@
                                 <div class="card-details">
                                   <div class="detail-inputs">
                                     <div class="detail">
-                                      <div><span>Mã nhà sản xuất:</span></div>
+                                      <div><span>Tên Khách Hàng:</span></div>
                                       <input type="text" placeholder="......" />
                                     </div>
                                     <div class="detail">
-                                      <div><span>Tên nhà sản xuất:</span></div>
+                                      <div><span>Số điện thoại:</span></div>
                                       <input type="text" placeholder="......" />
                                     </div>
                                   </div>
@@ -356,31 +243,28 @@
                                 </div>
                               </div>
                             </div>
-                            <label
-                              class="close-btn"
-                              for="modal-toggle-supplier"
-                            >
+                            <label class="close-btn" for="modal-toggle-t1">
                               <div class="btn-modal"><span>Đóng</span></div>
                             </label>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="discount-container">
+                    <div class="payment-container">
                       <input
                         type="checkbox"
-                        id="modal-toggle-discount"
+                        id="modal-toggle-t2"
                         style="display: none"
                       />
-                      <label for="modal-toggle-discount">
-                        <div id="modal-toggle-d-table" class="btn-modal">
-                          <span>Khuyến mãi</span>
+                      <label for="modal-toggle-t2">
+                        <div id="modal-toggle-t2-table" class="btn-modal">
+                          <span>Thanh Toán</span>
                         </div>
                       </label>
 
                       <label
                         class="modal-backdrop-3"
-                        for="modal-toggle-discount"
+                        for="modal-toggle-t2"
                       ></label>
 
                       <div class="modal-content">
@@ -388,161 +272,16 @@
                           <div class="grid-container">
                             <div class="card-singel left-full">
                               <div class="card-header">
-                                <h3>Danh sách khuyến mãi</h3>
+                                <h3>Danh sách hình thức thanh toán</h3>
                               </div>
                               <div class="card-body body-card sub">
                                 <div class="card-table">
-                                  <table id="table-d-sub" style="width: 100%">
-                                    <thead>
-                                      <tr>
-                                        <th>STT</th>
-                                        <th>Tỷ lệ giảm giá</th>
-                                        <th>Tên giảm giá</th>
-                                        <th>Ngày bắt đầu</th>
-                                        <th>Ngày hết hạn</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody></tbody>
-                                    <tfoot>
-                                      <tr>
-                                        <th>STT</th>
-                                        <th>Tỷ lệ giảm giá</th>
-                                        <th>Tên giảm giá</th>
-                                        <th>Ngày bắt đầu</th>
-                                      </tr>
-                                    </tfoot>
-                                  </table>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="card-singel right-top">
-                              <div class="card-header">
-                                <h3>Cập nhật</h3>
-                              </div>
-                              <div class="card-body body-card input">
-                                <div class="card-details">
-                                  <div class="detail-inputs">
-                                    <div class="detail">
-                                      <div><span>Tỷ lệ:</span></div>
-                                      <input type="text" placeholder="......" />
-                                    </div>
-                                    <div class="detail">
-                                      <div>
-                                        <span>Tên khuyến mãi:</span>
-                                      </div>
-                                      <input type="text" placeholder="......" />
-                                    </div>
-                                    <div class="detail">
-                                      <div>
-                                        <span>Ngày bắt đầu:</span>
-                                      </div>
-                                      <input type="text" placeholder="......" />
-                                    </div>
-                                    <div class="detail">
-                                      <div>
-                                        <span>Ngày kết thúc:</span>
-                                      </div>
-                                      <input type="text" placeholder="......" />
-                                    </div>
-                                  </div>
-                                  <div class="detail-buttons">
-                                    <input
-                                      type="button"
-                                      class="main-button"
-                                      value="Cập nhật "
-                                    />
-                                    <input
-                                      type="button"
-                                      class="sub-button"
-                                      value="Xóa"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="card-singel right-bottom">
-                              <div class="card-header">
-                                <h3>Thêm mới</h3>
-                              </div>
-                              <div class="card-body body-card input">
-                                <div class="card-details">
-                                    <div class="detail-inputs">
-                                    <div class="detail">
-                                      <div><span>Tỷ lệ:</span></div>
-                                      <input type="text" placeholder="......" />
-                                    </div>
-                                    <div class="detail">
-                                      <div>
-                                        <span>Tên khuyến mãi:</span>
-                                      </div>
-                                      <input type="text" placeholder="......" />
-                                    </div>
-                                    <div class="detail">
-                                      <div>
-                                        <span>Ngày bắt đầu:</span>
-                                      </div>
-                                      <input type="text" placeholder="......" />
-                                    </div>
-                                    <div class="detail">
-                                      <div>
-                                        <span>Ngày kết thúc:</span>
-                                      </div>
-                                      <input type="text" placeholder="......" />
-                                    </div>
-                                  </div>
-                                  <div class="detail-buttons">
-                                    <input
-                                      type="button"
-                                      class="main-button"
-                                      value="Thêm mới"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <label
-                              class="close-btn"
-                              for="modal-toggle-discount"
-                            >
-                              <div class="btn-modal"><span>Đóng</span></div>
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="guarantee-container">
-                      <input
-                        type="checkbox"
-                        id="modal-toggle-guarantee"
-                        style="display: none"
-                      />
-                      <label for="modal-toggle-guarantee">
-                        <div id="modal-toggle-g-table" class="btn-modal">
-                          <span>Bảo hành</span>
-                        </div>
-                      </label>
-
-                      <label
-                        class="modal-backdrop-3"
-                        for="modal-toggle-guarantee"
-                      ></label>
-
-                      <div class="modal-content">
-                        <div class="content">
-                          <div class="grid-container">
-                            <div class="card-singel left-full">
-                              <div class="card-header">
-                                <h3>Danh sách bảo hành sản phẩm</h3>
-                              </div>
-                              <div class="card-body body-card sub">
-                                <div class="card-table">
-                                  <table id="table-g-sub" style="width: 100%">
+                                  <table id="table-t2-sub" style="width: 100%">
                                     <thead>
                                       <tr>
                                         <th>STT</th>
                                         <th>MÃ</th>
-                                        <th>Mã bảo hành</th>
-                                        <th>Thông tin bảo hành</th>
+                                        <th>Tên hình thức t.toán</th>
                                         <th>NGÀY cập nhật</th>
                                       </tr>
                                     </thead>
@@ -551,8 +290,7 @@
                                       <tr>
                                         <th>STT</th>
                                         <th>MÃ</th>
-                                        <th>Mã bảo hành</th>
-                                        <th>Thông tin bảo hành</th>
+                                        <th>Tên hình thức t.toán</th>
                                         <th>NGÀY cập nhật</th>
                                       </tr>
                                     </tfoot>
@@ -568,13 +306,11 @@
                                 <div class="card-details">
                                   <div class="detail-inputs">
                                     <div class="detail">
-                                      <div><span>Mã bảo hành:</span></div>
+                                      <div><span>Mã thanh toán:</span></div>
                                       <input type="text" placeholder="......" />
                                     </div>
                                     <div class="detail">
-                                      <div>
-                                        <span>Thông tin bảo hành:</span>
-                                      </div>
+                                      <div><span>Tên thanh toán:</span></div>
                                       <input type="text" placeholder="......" />
                                     </div>
                                   </div>
@@ -601,13 +337,11 @@
                                 <div class="card-details">
                                   <div class="detail-inputs">
                                     <div class="detail">
-                                      <div><span>Mã bảo hành:</span></div>
+                                      <div><span>Mã thanh toán:</span></div>
                                       <input type="text" placeholder="......" />
                                     </div>
                                     <div class="detail">
-                                      <div>
-                                        <span>Thông tin bảo hành:</span>
-                                      </div>
+                                      <div><span>Tên thanh toán:</span></div>
                                       <input type="text" placeholder="......" />
                                     </div>
                                   </div>
@@ -621,21 +355,135 @@
                                 </div>
                               </div>
                             </div>
-                            <label
-                              class="close-btn"
-                              for="modal-toggle-guarantee"
-                            >
+                            <label class="close-btn" for="modal-toggle-t2">
                               <div class="btn-modal"><span>Đóng</span></div>
                             </label>
                           </div>
                         </div>
                       </div>
                     </div>
+                    <div class="status-container">
+                      <input
+                        type="checkbox"
+                        id="modal-toggle-t3"
+                        style="display: none"
+                      />
+                      <label for="modal-toggle-t3">
+                        <div id="modal-toggle-t3-table" class="btn-modal">
+                          <span>Trạng thái</span>
+                        </div>
+                      </label>
+
+                      <label
+                        class="modal-backdrop-3"
+                        for="modal-toggle-t3"
+                      ></label>
+
+                      <div class="modal-content">
+                        <div class="content">
+                          <div class="grid-container">
+                            <div class="card-singel left-full">
+                              <div class="card-header">
+                                <h3>Danh sách trạng thái</h3>
+                              </div>
+                              <div class="card-body body-card sub">
+                                <div class="card-table">
+                                  <table id="table-t3-sub" style="width: 100%">
+                                    <thead>
+                                      <tr>
+                                        <th>STT</th>
+                                        <th>Mã</th>
+                                        <th>Trạng thái</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                    <tfoot>
+                                      <tr>
+                                        <th>STT</th>
+                                        <th>Mã</th>
+                                        <th>Trạng thái</th>
+                                      </tr>
+                                    </tfoot>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-singel right-top">
+                              <div class="card-header">
+                                <h3>Cập nhật</h3>
+                              </div>
+                              <div class="card-body body-card input">
+                                <div class="card-details">
+                                  <div class="detail-inputs">
+                                    <div class="detail">
+                                      <div><span>Mã:</span></div>
+                                      <input type="text" placeholder="......" />
+                                    </div>
+                                    <div class="detail">
+                                      <div>
+                                        <span>Trạng thái:</span>
+                                      </div>
+                                      <input type="text" placeholder="......" />
+                                    </div>
+                                   
+                                  </div>
+                                  <div class="detail-buttons">
+                                    <input
+                                      type="button"
+                                      class="main-button"
+                                      value="Cập nhật "
+                                    />
+                                    <input
+                                      type="button"
+                                      class="sub-button"
+                                      value="Xóa"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-singel right-bottom">
+                              <div class="card-header">
+                                <h3>Thêm mới</h3>
+                              </div>
+                              <div class="card-body body-card input">
+                                <div class="card-details">
+                                   <div class="detail-inputs">
+                                    <div class="detail">
+                                      <div><span>Mã:</span></div>
+                                      <input type="text" placeholder="......" />
+                                    </div>
+                                    <div class="detail">
+                                      <div>
+                                        <span>Trạng thái:</span>
+                                      </div>
+                                      <input type="text" placeholder="......" />
+                                    </div>
+                                   
+                                  </div>
+                                  <div class="detail-buttons">
+                                    <input
+                                      type="button"
+                                      class="main-button"
+                                      value="Thêm mới"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <label class="close-btn" for="modal-toggle-t3">
+                              <div class="btn-modal"><span>Đóng</span></div>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   
                   </div>
                 </div>
                 <div class="card-singel left-bottom">
                   <div class="card-header">
-                    <h3>Thông tin sản phẩm</h3>
+                    <h3>Thông tin Đơn hàng</h3>
                   </div>
                   <div class="card-body body-card">
                     <div class="card-details">
@@ -643,44 +491,31 @@
                         <span>-Mã:</span> <span>123</span>
                       </p>
                       <p class="order-info-item">
-                        <span>-Tên:</span> <span>123</span>
+                        <span>-Ngày đặt:</span> <span>123</span>
                       </p>
                       <p class="order-info-item">
-                        <span>-Số Lượng:</span> <span>123</span>
+                        <span>-Hình thức t.toán:</span> <span>123</span>
                       </p>
                       <p class="order-info-item">
-                        <span>-Giá:</span> <span>123</span>
+                        <span>-Tên khách hàng:</span> <span>123</span>
                       </p>
                       <p class="order-info-item">
-                        <span>-Loại:</span> <span>123</span>
+                        <span>-Địa chỉ nhận hàng:</span> <span>123</span>
                       </p>
                       <p class="order-info-item">
-                        <span>-Nhà sản xuất:</span> <span>123</span>
-                      </p>
-                      <p class="order-info-item">
-                        <span>-Khuyến mãi:</span> <span>123</span>
-                      </p>
-                      <p class="order-info-item">
-                        <span>-Bảo Hành:</span> <span>123</span>
-                      </p>
-                      <p class="order-info-item">
-                        <span>-Mô Tả:</span> <span>123</span>
+                        <span>-Sdt khách hàng:</span> <span>123</span>
                       </p>
                       <p class="order-info-item">
                         <span>-Trạng thái:</span> <span>123</span>
                       </p>
-                      <a href="orderdetail.html">
-                        <input
-                          type="button"
-                          class="sub-button"
-                          value="Cập nhật mô tả"
-                        />
-                      </a>
+                      <p class="order-info-item">
+                        <span>-N.viên phụ trách:</span> <span>123</span>
+                      </p>
                       <a href="orderdetail.html">
                         <input
                           type="button"
                           class="main-button"
-                          value="Chỉnh sửa"
+                          value="Tiếp nhận đ.hàng"
                         />
                       </a>
                     </div>
@@ -688,7 +523,7 @@
                 </div>
                 <div class="card-singel right-full">
                   <div class="card-header">
-                    <h3>Danh sách sản phẩm</h3>
+                    <h3>Danh sách Đơn hàng</h3>
                   </div>
                   <div class="card-body body-card">
                     <div class="card-table">
@@ -697,35 +532,39 @@
                           <tr>
                             <th>STT</th>
                             <th>MÃ</th>
-                            <th>TÊN</th>
-                            <th>SỐ LƯỢNG</th>
-                            <th>GIÁ (VND)</th>
-                            <th>LOẠI</th>
-                            <th>Kích cỡ</th>
-                            <th>NSX</th>
-                            <th>KHUYẾN MÃI</th>
-                            <th>MÔ TẢ</th>
-                            <th>BẢO HÀNH</th>
-                            <th>Trạng thái</th>
-                            <th>NGÀY THÊM</th>
+                            <th>Ngày đặt</th>
+                            <th>Hình thức T.Toán</th>
+                            <th>Tên KH</th>
+                            <th>Địa chỉ KH</th>
+                            <th>SDT KH</th>
+                            <th>Trạng thái đ.hàng</th>
+                            <th>NV phụ trách</th>
                           </tr>
                         </thead>
-                        <tbody></tbody>
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>12</td>
+                          </tr>
+                        </tbody>
                         <tfoot>
                           <tr>
                             <th>STT</th>
                             <th>MÃ</th>
-                            <th>TÊN</th>
-                            <th>SỐ LƯỢNG</th>
-                            <th>GIÁ (VND)</th>
-                            <th>LOẠI</th>
-                            <th>Kích cỡ</th>
-                            <th>NSX</th>
-                            <th>KHUYẾN MÃI</th>
-                            <th>MÔ TẢ</th>
-                            <th>BẢO HÀNH</th>
-                            <th>Trạng thái</th>
-                            <th>NGÀY THÊM</th>
+                            <th>Ngày đặt</th>
+                            <th>Hình thức T.Toán</th>
+                            <th>Tên KH</th>
+                            <th>Địa chỉ KH</th>
+                            <th>SDT KH</th>
+                            <th>Trạng thái đ.hàng</th>
+                            <th>NV phụ trách</th>
                           </tr>
                         </tfoot>
                       </table>
@@ -738,62 +577,37 @@
               <div class="card-content flex-container n-order">
                 <div class="card-singel left">
                   <div class="card-header">
-                    <h3>Thông tin chi tiết sản phẩm</h3>
+                    <h3>Thông tin chi tiết đơn hàng</h3>
                   </div>
                   <div class="card-body body-card">
                     <div class="card-details">
                       <div class="detail-inputs">
                         <div class="detail">
-                          <div><span>Mã sản phẩm:</span></div>
+                          <div><span>Mã:</span></div>
                           <input type="text" placeholder="......" />
                         </div>
                         <div class="detail">
-                          <div><span>Tên sản phẩm:</span></div>
+                          <div><span>Ngày tạo:</span></div>
                           <input type="text" placeholder="......" />
                         </div>
                         <div class="detail">
-                          <div><span>Số lượng sản phẩm hiện tại:</span></div>
+                          <div><span>Tên khách hàng*:</span></div>
                           <input type="text" placeholder="......" />
                         </div>
                         <div class="detail">
-                          <div><span>Màu sắc:</span></div>
+                          <div><span>Số điện thoại*:</span></div>
                           <input type="text" placeholder="......" />
                         </div>
                         <div class="detail">
-                          <div><span>Giá tiền ( 1 sản phẩm/VND ):</span></div>
-                          <input type="text" placeholder="......" />
-                        </div>
-
-                        <div class="detail">
-                          <div><span>Loại sản phẩm:</span></div>
+                          <div><span>Địa chỉ:</span></div>
                           <input type="text" placeholder="......" />
                         </div>
                         <div class="detail">
-                          <div><span>Kích cỡ:</span></div>
+                          <div><span>Nhân viên phụ trách:</span></div>
                           <input type="text" placeholder="......" />
                         </div>
                         <div class="detail">
-                          <div><span>Nhà sản xuất:</span></div>
-                          <input type="text" placeholder="......" />
-                        </div>
-                        <div class="detail">
-                          <div><span>Trạng thái sản phẩm:</span></div>
-                          <input type="text" placeholder="......" />
-                        </div>
-                        <div class="detail">
-                          <div><span>Tình trạng khuyến mãi:</span></div>
-                          <input type="text" placeholder="......" />
-                        </div>
-                        <div class="detail">
-                          <div><span>Thời gian bảo hành:</span></div>
-                          <input type="text" placeholder="......" />
-                        </div>
-                        <div class="detail">
-                          <div><span>Nhân viên thêm sản phẩm:</span></div>
-                          <input type="text" placeholder="......" />
-                        </div>
-                        <div class="detail">
-                          <div><span>Ngày tạo sản phẩm:</span></div>
+                          <div><span>Mã giảm giá:</span></div>
                           <input type="text" placeholder="......" />
                         </div>
                       </div>
@@ -806,7 +620,7 @@
                         <input
                           type="button"
                           class="main-button"
-                          value="Lưu và tạo mô tả"
+                          value="Tạo đơn hàng"
                         />
                       </div>
                     </div>
@@ -814,42 +628,44 @@
                 </div>
                 <div class="card-singel right">
                   <div class="card-header">
-                    <h3>Ảnh đại diện sản phẩm</h3>
+                    <h3>Danh sách sản phẩm</h3>
                   </div>
                   <div class="card-body body-card">
-                    <input
-                      type="button"
-                      class="main-button"
-                      value="Lưu hình ảnh"
-                    />
-                    <div class="img-container">
-                      <div class="card-header">
-                        <h3>Ảnh đại diện</h3>
-                      </div>
-                      <div class="card-img">
-                        <div class="i-img">
-                          <span class="las la-plus-circle"></span>
+                      <div class="card-table body-card">
+                    <table id="table-n0" class="" style="width: 100%">
+                      <thead>
+                        <tr>
+                          <th>STT</th>
+                          <th>MÃ</th>
+                          <th>Sản phẩm</th>
+                          <th>Giảm</th>
+                          <th>Giá tiền</th>
+                          <th>Trạng thái</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td></td>
+                          <td>12</td>
+                          <td>12</td>
+                          <td>12</td>
+                          <td>12</td>
+                          <td>12</td>
 
-                          <img src="img/products/1 (1).jpg" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="img-container">
-                      <div class="card-header">
-                        <h3>Ảnh chi tiết</h3>
-                      </div>
-                      <div class="card-img">
-                        <div class="i-img n-img">
-                          <span class="las la-plus-circle"></span>
-                        </div>
-                        <div class="i-img n-img">
-                          <span class="las la-plus-circle"></span>
-                        </div>
-                        <div class="i-img n-img">
-                          <span class="las la-plus-circle"></span>
-                        </div>
-                      </div>
-                    </div>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                           <th>STT</th>
+                          <th>MÃ</th>
+                          <th>Sản phẩm</th>
+                           <th>Giảm</th>
+                          <th>Giá tiền</th>
+                          <th>Trạng thái</th>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
                   </div>
                 </div>
               </div>
