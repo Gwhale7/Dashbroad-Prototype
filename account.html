@@ -15,7 +15,7 @@
     />
     <link rel="stylesheet" href="css/prototype.css" />
     <link rel="stylesheet" href="css/detail.css" />
-    <link rel="stylesheet" href="css/order.css" />
+    <link rel="stylesheet" href="css/account.css" />
 
     <title>Prototype Home</title>
   </head>
@@ -43,7 +43,7 @@
           </li>
 
           <li>
-            <a href="orders.html" class="active">
+            <a href="orders.html">
               <span class="las la-shopping-bag"></span>
               <span>Quản Lý Đơn Hàng</span>
             </a>
@@ -56,12 +56,11 @@
             </a>
           </li>
           <li>
-            <a href="account.html">
+            <a href="account.html" class="active">
               <span class="las la-user"></span>
               <span>Quản Lý Tài Khoản</span>
             </a>
           </li>
-          
         </ul>
       </div>
     </div>
@@ -117,23 +116,23 @@
 
             <ul class="tabs">
               <li class="tab">
-                <label for="tab1">Bảng tổng hợp đơn hàng</label>
+                <label for="tab1">Bảng tổng hợp tài khoản</label>
               </li>
               <li id="modal-toggle-n0-table" class="tab">
-                <label for="tab2">Tạo đơn hàng mới</label>
+                <label for="tab2">Tạo tài khoản mới</label>
               </li>
               <li class="tab">
                 <label for="tab3">FAQ</label>
               </li>
             </ul>
             <div class="tab-content">
-              <div class="card-content grid-container t-order">
+              <div class="card-content grid-container t-account">
                 <div class="card-singel left-top">
                   <div class="card-header">
                     <h3>Danh sách quản lý</h3>
                   </div>
                   <div class="card-body body-card">
-                    <div class="client-container">
+                    <div class="office-container">
                       <input
                         type="checkbox"
                         id="modal-toggle-t1"
@@ -141,7 +140,7 @@
                       />
                       <label for="modal-toggle-t1">
                         <div id="modal-toggle-t1-table" class="btn-modal">
-                          <span>Khách Hàng</span>
+                          <span>Bộ phận</span>
                         </div>
                       </label>
                       <label
@@ -153,7 +152,7 @@
                           <div class="grid-container">
                             <div class="card-singel left-full">
                               <div class="card-header">
-                                <h3>Danh sách Khách Hàng</h3>
+                                <h3>Danh sách bộ phận</h3>
                               </div>
                               <div class="card-body body-card sub">
                                 <div class="card-table">
@@ -162,9 +161,8 @@
                                       <tr>
                                         <th>STT</th>
                                         <th>MÃ</th>
-                                        <th>Tên KH</th>
-                                        <th>SDT</th>
-                                        <th>NGÀY Đ.Ký</th>
+                                        <th>Tên B.phận</th>
+                                        <th>Trưởng B.Phận</th>
                                       </tr>
                                     </thead>
                                     <tbody></tbody>
@@ -172,9 +170,8 @@
                                       <tr>
                                         <th>STT</th>
                                         <th>MÃ</th>
-                                        <th>Tên KH</th>
-                                        <th>SDT</th>
-                                        <th>NGÀY Đ.Ký</th>
+                                        <th>Tên B.phận</th>
+                                        <th>Trưởng B.Phận</th>
                                       </tr>
                                     </tfoot>
                                   </table>
@@ -189,11 +186,11 @@
                                 <div class="card-details">
                                   <div class="detail-inputs">
                                     <div class="detail">
-                                      <div><span>Tên khách Hàng:</span></div>
+                                      <div><span>Tên bộ phận:</span></div>
                                       <input type="text" placeholder="......" />
                                     </div>
                                     <div class="detail">
-                                      <div><span>SDT:</span></div>
+                                      <div><span>Trưởng bộ phận:</span></div>
                                       <input type="text" placeholder="......" />
                                     </div>
                                   </div>
@@ -220,11 +217,11 @@
                                 <div class="card-details">
                                   <div class="detail-inputs">
                                     <div class="detail">
-                                      <div><span>Tên Khách Hàng:</span></div>
+                                      <div><span>Tên bộ phận:</span></div>
                                       <input type="text" placeholder="......" />
                                     </div>
                                     <div class="detail">
-                                      <div><span>Số điện thoại:</span></div>
+                                      <div><span>Trưởng bộ phận:</span></div>
                                       <input type="text" placeholder="......" />
                                     </div>
                                   </div>
@@ -245,118 +242,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="payment-container">
-                      <input
-                        type="checkbox"
-                        id="modal-toggle-t2"
-                        style="display: none"
-                      />
-                      <label for="modal-toggle-t2">
-                        <div id="modal-toggle-t2-table" class="btn-modal">
-                          <span>Thanh Toán</span>
-                        </div>
-                      </label>
 
-                      <label
-                        class="modal-backdrop-3"
-                        for="modal-toggle-t2"
-                      ></label>
-
-                      <div class="modal-content">
-                        <div class="content">
-                          <div class="grid-container">
-                            <div class="card-singel left-full">
-                              <div class="card-header">
-                                <h3>Danh sách hình thức thanh toán</h3>
-                              </div>
-                              <div class="card-body body-card sub">
-                                <div class="card-table">
-                                  <table id="table-t2-sub" style="width: 100%">
-                                    <thead>
-                                      <tr>
-                                        <th>STT</th>
-                                        <th>MÃ</th>
-                                        <th>Tên hình thức t.toán</th>
-                                        <th>NGÀY cập nhật</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody></tbody>
-                                    <tfoot>
-                                      <tr>
-                                        <th>STT</th>
-                                        <th>MÃ</th>
-                                        <th>Tên hình thức t.toán</th>
-                                        <th>NGÀY cập nhật</th>
-                                      </tr>
-                                    </tfoot>
-                                  </table>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="card-singel right-top">
-                              <div class="card-header">
-                                <h3>Cập nhật</h3>
-                              </div>
-                              <div class="card-body body-card input">
-                                <div class="card-details">
-                                  <div class="detail-inputs">
-                                    <div class="detail">
-                                      <div><span>Mã thanh toán:</span></div>
-                                      <input type="text" placeholder="......" />
-                                    </div>
-                                    <div class="detail">
-                                      <div><span>Tên thanh toán:</span></div>
-                                      <input type="text" placeholder="......" />
-                                    </div>
-                                  </div>
-                                  <div class="detail-buttons">
-                                    <input
-                                      type="button"
-                                      class="main-button"
-                                      value="Cập nhật "
-                                    />
-                                    <input
-                                      type="button"
-                                      class="sub-button"
-                                      value="Xóa"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="card-singel right-bottom">
-                              <div class="card-header">
-                                <h3>Thêm mới</h3>
-                              </div>
-                              <div class="card-body body-card input">
-                                <div class="card-details">
-                                  <div class="detail-inputs">
-                                    <div class="detail">
-                                      <div><span>Mã thanh toán:</span></div>
-                                      <input type="text" placeholder="......" />
-                                    </div>
-                                    <div class="detail">
-                                      <div><span>Tên thanh toán:</span></div>
-                                      <input type="text" placeholder="......" />
-                                    </div>
-                                  </div>
-                                  <div class="detail-buttons">
-                                    <input
-                                      type="button"
-                                      class="main-button"
-                                      value="Thêm mới"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <label class="close-btn" for="modal-toggle-t2">
-                              <div class="btn-modal"><span>Đóng</span></div>
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                     <div class="status-container">
                       <input
                         type="checkbox"
@@ -420,7 +306,6 @@
                                       </div>
                                       <input type="text" placeholder="......" />
                                     </div>
-                                   
                                   </div>
                                   <div class="detail-buttons">
                                     <input
@@ -443,7 +328,7 @@
                               </div>
                               <div class="card-body body-card input">
                                 <div class="card-details">
-                                   <div class="detail-inputs">
+                                  <div class="detail-inputs">
                                     <div class="detail">
                                       <div><span>Mã:</span></div>
                                       <input type="text" placeholder="......" />
@@ -454,7 +339,6 @@
                                       </div>
                                       <input type="text" placeholder="......" />
                                     </div>
-                                   
                                   </div>
                                   <div class="detail-buttons">
                                     <input
@@ -473,44 +357,52 @@
                         </div>
                       </div>
                     </div>
-                   
                   </div>
                 </div>
                 <div class="card-singel left-bottom">
                   <div class="card-header">
-                    <h3>Thông tin Đơn hàng</h3>
+                    <h3>Thông tin tài khoản</h3>
                   </div>
                   <div class="card-body body-card">
                     <div class="card-details">
                       <p class="order-info-item">
-                        <span>-Mã:</span> <span>123</span>
+                        <span>-Mã n.viên:</span> <span>123</span>
                       </p>
                       <p class="order-info-item">
-                        <span>-Ngày đặt:</span> <span>123</span>
+                        <span>-Tên n.viên:</span> <span>123</span>
                       </p>
                       <p class="order-info-item">
-                        <span>-Hình thức t.toán:</span> <span>123</span>
+                        <span>-Bộ phận:</span> <span>123</span>
                       </p>
                       <p class="order-info-item">
-                        <span>-Tên khách hàng:</span> <span>123</span>
+                        <span>-Giới tính:</span> <span>123</span>
                       </p>
                       <p class="order-info-item">
-                        <span>-Địa chỉ nhận hàng:</span> <span>123</span>
+                        <span>-SDT:</span> <span>123</span>
                       </p>
                       <p class="order-info-item">
-                        <span>-Sdt khách hàng:</span> <span>123</span>
+                        <span>-Ngày sinh:</span> <span>123</span>
                       </p>
                       <p class="order-info-item">
-                        <span>-Trạng thái:</span> <span>123</span>
+                        <span>-Nơi sinh:</span> <span>123</span>
                       </p>
                       <p class="order-info-item">
-                        <span>-N.viên phụ trách:</span> <span>123</span>
+                        <span>-CMND:</span> <span>123</span>
                       </p>
-                      <a href="orderdetail.html">
+                      <p class="order-info-item">
+                        <span>-Trình độ học vấn:</span> <span>123</span>
+                      </p>
+                      <p class="order-info-item">
+                        <span>-T.trạng hôn nhân:</span> <span>123</span>
+                      </p>
+                      <p class="order-info-item">
+                        <span>-T.trạng làm việc:</span> <span>123</span>
+                      </p>
+                      <a href="accountdetail.html">
                         <input
                           type="button"
                           class="main-button"
-                          value="Tiếp nhận đ.hàng"
+                          value="Chi tiết"
                         />
                       </a>
                     </div>
@@ -518,7 +410,7 @@
                 </div>
                 <div class="card-singel right-full">
                   <div class="card-header">
-                    <h3>Danh sách Đơn hàng</h3>
+                    <h3>Danh sách tài khoản nhân viên</h3>
                   </div>
                   <div class="card-body body-card">
                     <div class="card-table">
@@ -527,18 +419,24 @@
                           <tr>
                             <th>STT</th>
                             <th>MÃ</th>
-                            <th>Ngày đặt</th>
-                            <th>Hình thức T.Toán</th>
-                            <th>Tên KH</th>
-                            <th>Địa chỉ KH</th>
-                            <th>SDT KH</th>
-                            <th>Trạng thái đ.hàng</th>
-                            <th>NV phụ trách</th>
+                            <th>Tên nhân viên</th>
+                            <th>Bộ phận</th>
+                            <th>Giới tính</th>
+                            <th>SDT</th>
+                            <th>Ngày sinh</th>
+                            <th>Nơi sinh</th>
+                            <th>CMND</th>
+                            <th>Trình độ học vấn</th>
+                            <th>T.trạng hôn nhân</th>
+                            <th>T.trạng làm việc</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
                             <td></td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>12</td>
                             <td>12</td>
                             <td>12</td>
                             <td>12</td>
@@ -553,13 +451,16 @@
                           <tr>
                             <th>STT</th>
                             <th>MÃ</th>
-                            <th>Ngày đặt</th>
-                            <th>Hình thức T.Toán</th>
-                            <th>Tên KH</th>
-                            <th>Địa chỉ KH</th>
-                            <th>SDT KH</th>
-                            <th>Trạng thái đ.hàng</th>
-                            <th>NV phụ trách</th>
+                            <th>Tên nhân viên</th>
+                            <th>Bộ phận</th>
+                            <th>Giới tính</th>
+                            <th>SDT</th>
+                            <th>Ngày sinh</th>
+                            <th>Nơi sinh</th>
+                            <th>CMND</th>
+                            <th>Trình độ học vấn</th>
+                            <th>T.trạng hôn nhân</th>
+                            <th>T.trạng làm việc</th>
                           </tr>
                         </tfoot>
                       </table>
@@ -569,98 +470,202 @@
               </div>
             </div>
             <div class="tab-content">
-              <div class="card-content flex-container n-order">
-                <div class="card-singel left">
-                  <div class="card-header">
-                    <h3>Thông tin chi tiết đơn hàng</h3>
-                  </div>
-                  <div class="card-body body-card">
-                    <div class="card-details">
-                      <div class="detail-inputs">
-                        <div class="detail">
-                          <div><span>Mã:</span></div>
-                          <input type="text" placeholder="......" />
-                        </div>
-                        <div class="detail">
-                          <div><span>Ngày tạo:</span></div>
-                          <input type="text" placeholder="......" />
-                        </div>
-                        <div class="detail">
-                          <div><span>Tên khách hàng*:</span></div>
-                          <input type="text" placeholder="......" />
-                        </div>
-                        <div class="detail">
-                          <div><span>Số điện thoại*:</span></div>
-                          <input type="text" placeholder="......" />
-                        </div>
-                        <div class="detail">
-                          <div><span>Địa chỉ:</span></div>
-                          <input type="text" placeholder="......" />
-                        </div>
-                        <div class="detail">
-                          <div><span>Nhân viên phụ trách:</span></div>
-                          <input type="text" placeholder="......" />
-                        </div>
-                        <div class="detail">
-                          <div><span>Mã giảm giá:</span></div>
-                          <input type="text" placeholder="......" />
-                        </div>
-                      </div>
-                      <div class="detail-buttons">
-                        <input
-                          type="button"
-                          class="sub-button"
-                          value="Làm mới"
+              <div class="card-content grid-container n-account">
+                <div class="card-singel left-top">
+                  <div class="card-body">
+                    <img
+                      class="avatar small"
+                      src="https://cdn.discordapp.com/attachments/944097610644463678/944902147441565746/user.png"
+                      alt=""
+                    />
+                    <div class="avatar-container">
+                      <input
+                        type="checkbox"
+                        id="modal-toggle-1"
+                        style="display: none"
+                      />
+
+                      <label class="modal-btn" for="modal-toggle-1">
+                        <small>
+                          <span class="las la-edit"></span>Đổi ảnh đại
+                          diện</small
+                        >
+                      </label>
+
+                      <label
+                        class="modal-backdrop"
+                        for="modal-toggle-1"
+                      ></label>
+
+                      <div class="modal-content">
+                        <h2>Chọn ảnh đại diện</h2>
+                        <img
+                          class="avatar"
+                          src="https://cdn.discordapp.com/attachments/944097610644463678/944902147441565746/user.png"
+                          alt=""
                         />
-                        <input
-                          type="button"
-                          class="main-button"
-                          value="Tạo đơn hàng"
-                        />
+                        <div>
+                          <small
+                            >*kích thước ảnh dưới 5mb có định dạng
+                            '.jpg'.</small
+                          >
+                        </div>
+                        <label class="modal-content-btn upload" for=""
+                          >Tải ảnh lên</label
+                        >
+                        <label class="modal-content-btn ok" for="modal-toggle-1"
+                          >Đồng ý</label
+                        >
+                        <label
+                          class="modal-content-btn out"
+                          for="modal-toggle-1"
+                          >Thoát</label
+                        >
                       </div>
+                    </div>
+
+                    <div>
+                      <h3>Shin Yuna</h3>
+                      <span>Super Admin</span>
                     </div>
                   </div>
                 </div>
-                <div class="card-singel right">
+                <div class="card-singel right-top">
                   <div class="card-header">
-                    <h3>Danh sách sản phẩm</h3>
+                    <h3>Thông tin tài khoản</h3>
                   </div>
-                  <div class="card-body body-card">
-                      <div class="card-table body-card">
-                    <table id="table-n0" class="" style="width: 100%">
-                      <thead>
-                        <tr>
-                          <th>STT</th>
-                          <th>MÃ</th>
-                          <th>Sản phẩm</th>
-                          <th>Giảm</th>
-                          <th>Giá tiền</th>
-                          <th>Trạng thái</th>
-                        </tr>
-                      </thead>
+                  <div class="account-grid">
+                    <table width="100%">
                       <tbody>
                         <tr>
+                          <td>Tên tài khoản:</td>
+                          <td>
+                            <input
+                              type="text"
+                              placeholder="shinyuna9113"
+                              value=""
+                            />
+                          </td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td>Mật khẩu:</td>
+                          <td>
+                            <input
+                              type="password"
+                              value="**********"
+                              disabled
+                            />
+                          </td>
                           <td></td>
-                          <td>12</td>
-                          <td>12</td>
-                          <td>12</td>
-                          <td>12</td>
-                          <td>12</td>
+                        </tr>
+                        <tr>
+                          <td>Mail khôi phục:</td>
+                          <td>
+                            <input
+                              type="text"
+                              placeholder="shinyuna.9113@gmail.com"
+                              value=""
+                            />
+                          </td>
 
+                          <td></td>
                         </tr>
                       </tbody>
-                      <tfoot>
-                        <tr>
-                           <th>STT</th>
-                          <th>MÃ</th>
-                          <th>Sản phẩm</th>
-                           <th>Giảm</th>
-                          <th>Giá tiền</th>
-                          <th>Trạng thái</th>
-                        </tr>
-                      </tfoot>
                     </table>
                   </div>
+                </div>
+                <div class="card-singel right-bottom">
+                  <div class="card-header">
+                    <h3>Thông tin cá nhân</h3>
+                  </div>
+                  <div class="infor-grid">
+                    <div class="content">
+                      <p>
+                        Mã nhân viên:
+                        <input type="text" placeholder="NT001" value="" />
+                      </p>
+                      <p>
+                        Bộ phận:
+                        <input type="text" placeholder="Super boss" value="" />
+                      </p>
+                      <p>
+                        Họ và tên:
+                        <input type="text" placeholder="Shin Yuna" value="" />
+                      </p>
+                      <p>
+                        Giới tính:
+                        <input type="text" placeholder="Nữ" value="" />
+                      </p>
+                      <p>
+                        Số điện thoại:
+                        <input type="text" placeholder="0123456798" value="" />
+                      </p>
+                    </div>
+                    <div class="content">
+                      <p>
+                        Ngày Sinh:<input
+                          type="text"
+                          placeholder="9/11/2003"
+                          value=""
+                        />
+                      </p>
+                      <p>
+                        Nơi sinh:
+                        <input type="text" placeholder="Mỹ" value="" />
+                      </p>
+                      <p>
+                        CMND:
+                        <input type="text" placeholder="0123456798" value="" />
+                      </p>
+                      <p>
+                        Nơi cấp (CMND):
+                        <input
+                          type="text"
+                          placeholder="Tp. Hồ Chí Minh"
+                          value=""
+                        />
+                      </p>
+                      <p>
+                        Ngày cấp (CMND):
+                        <input type="text" placeholder="16/08/2015" value="" />
+                      </p>
+                    </div>
+                    <div class="content">
+                      <p>
+                        Trình độ học vấn:
+                        <input type="text" placeholder="Cao đẳng" value="" />
+                      </p>
+                      <p>
+                        Tình trạng hôn nhân:
+                        <input type="text" placeholder="Cô đơn" value="" />
+                      </p>
+                      <p>
+                        Ngày đầu đi làm:
+                        <input type="text" placeholder="10/10/2021" value="" />
+                      </p>
+                      <p>
+                        Ngày kết thúc thực tập:
+                        <input
+                          type="text"
+                          placeholder="10/12/2021"
+                          value=""
+                          disabled
+                        />
+                      </p>
+                      <p>
+                        Số ngày được nghỉ phép:
+                        <input type="text" placeholder="0 " value="" />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-singel left-bottom">
+                  <div class="card-body">
+                      <input type="button" class="main-button" value="Lưu" />
+                    
+                      <input type="button" class="sub-button" value="Làm mới" />
+
                   </div>
                 </div>
               </div>

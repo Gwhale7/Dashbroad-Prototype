@@ -1,0 +1,442 @@
+.tab-content .card-content.grid-container.t-account {
+  grid-template-columns: 25% auto;
+  grid-template-rows: 0.25fr auto;
+  grid-template-areas:
+    "left-top right-full"
+    "left-bottom right-full";
+}
+
+.card-singel.left-bottom .card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.order-info-item {
+  display: flex;
+  padding: 0 0.5rem;
+}
+
+.order-info-item span {
+  white-space: nowrap;
+}
+
+.order-info-item span:first-child {
+  width: 10rem;
+}
+
+.card-singel.left-bottom .card-body input {
+  width: 100%;
+}
+
+.card-singel.left-bottom .card-body input{
+  margin-bottom: 0;
+}
+
+.card-singel.left-top .card-body {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.card-singel.left-top .card-body input {
+  width: 100%;
+}
+
+ .card-singel.left {
+  width: 60%;
+}
+.card-singel.right {
+  width: 40%;
+}
+ .card-singel.left .card-body {
+  overflow: auto;
+}
+.card-singel.left .card-body .card-details {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-gap: 0.5rem;
+  white-space: nowrap;
+}
+ .card-singel.left .card-body .card-details .detail-inputs{
+  width: 100%;
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(3 , 1fr);
+}
+.card-details .detail-buttons{
+  display: flex;
+  justify-content:space-between;
+}
+.card-singel.left .card-body .detail input {
+  width: 100%;
+}
+
+
+.card-singel.right .main-button {
+  margin: 0;
+}
+.card-singel.right .img-container {
+  margin: 1rem 0;
+}
+
+.card-singel.right .img-container {
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+}
+
+.card-singel.right .img-container .card-header {
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+
+.img-container .card-img {
+  height: calc(100vh - 710px);
+  width: 100%;       
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  overflow: auto;
+}
+
+.img-container .card-img .i-img {
+  background-color: var(--sub-light-color);
+  border: 0.5rem solid var(--main-color);
+  border-radius: 10px;
+  position: relative;
+}
+
+.img-container .card-img .i-img:not(.n-img) span {
+  opacity: 0;
+}
+
+.img-container .card-img .i-img.n-img span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  z-index: 2;
+}
+
+.img-container .card-img .i-img:hover > span {
+  opacity: 1;
+  z-index: 2;
+  color: var(--sub-color);
+}
+
+.img-container .card-img .i-img:hover {
+  border: 0.5rem solid var(--sub-color);
+}
+
+.img-container .card-img .i-img img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.dataTables_scrollBody{
+  background-color: var(--sub-trans);
+}
+.n-order .toolbar .sub.t1{
+  display: none;
+}
+
+#modal-toggle-t1:checked ~ .modal-content,
+#modal-toggle-t2:checked ~ .modal-content,
+#modal-toggle-t3:checked ~ .modal-content,
+#modal-toggle-t4:checked ~ .modal-content{
+  display: block;
+}
+
+.modal-content{
+  width: 90%;
+  height: 95%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-content .content{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  position: relative;
+}
+.content .grid-container{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 40% auto;
+  grid-template-rows: 1fr 1fr auto;
+  grid-template-areas:
+    "left-full right-top"
+    "left-full right-bottom"
+    "btn-modal btn-modal";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.content .close-btn{
+  grid-area: btn-modal;
+  
+}
+.content .grid-container .card-body{
+  overflow: auto;
+}
+
+.modal-content .card-body.input{
+  display: flex;
+  justify-content: center;
+}
+.modal-content .card-details{
+   justify-content: center;
+  display:flex;
+  flex-direction: column;
+  gap: .5rem;
+  white-space: nowrap;
+  width: 90%;
+}
+.modal-content .card-details .detail-inputs{
+  width: 100%;
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(2 , 1fr);
+}
+.modal-content .card-details .detail-buttons{
+  display: flex;
+  gap: .5rem;
+}
+#modal-toggle-t1:checked ~ .modal-backdrop-3,
+#modal-toggle-t2:checked ~ .modal-backdrop-3,
+#modal-toggle-t3:checked ~ .modal-backdrop-3,
+#modal-toggle-t4:checked ~ .modal-backdrop-3{
+  display: block;
+}
+
+.tab-content .card-content.grid-container.n-account{
+  grid-template-columns: 20% auto;
+  grid-template-rows: 0.25fr 1.75fr;
+  grid-template-areas:
+    "left-top right-top"
+    "left-bottom right-bottom";
+}
+
+.n-account .card-singel.left-top .card-body{
+  text-align: center;
+}
+
+.n-account .card-singel.left-top .avatar.small {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 5px solid var(--sub-color);
+  transition: border 0.4s ease;
+}
+
+.n-account .card-singel.left-top .avatar-container .modal-btn {
+  color: var(--text-grey);
+  text-decoration: underline;
+}
+
+.n-account .card-singel.left-top .avatar-container .modal-btn:hover {
+  color: var(--main-color);
+}
+
+.n-account .card-singel.left-top .avatar-container .modal-content,
+.n-account .card-singel.left-top .avatar-container .modal-backdrop {
+  display: none;
+  visibility: hidden;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.n-account .card-singel.left-top .avatar-container .modal-close span:hover {
+  color: var(--sub-color);
+}
+
+.n-account .card-singel.left-top .avatar-container .avatar {
+  margin-top: 2.5rem;
+  width: 400px;
+  height: 400px;
+  border: 5px solid var(--sub-color);
+  border-radius: 10px;
+}
+
+.n-account .modal-content div {
+  text-decoration: underline;
+  color: var(--text-grey);
+}
+
+.n-account .modal-content h2 {
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--text-sub);
+}
+
+.n-account .modal-content hr {
+  color: var(--text-menu);
+}
+
+.n-account .modal-content-btn {
+  text-align: center;
+  cursor: pointer;
+  bottom: 35px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 15px;
+  height: 44px;
+  transition: all 0.4s ease;
+}
+
+.n-account .modal-content-btn.upload {
+  position: absolute;
+  left: 30px;
+  background: var(--main-color);
+  color: #fff;
+  width: 140px;
+}
+
+.n-account .modal-content-btn.ok {
+  position: absolute;
+  right: 130px;
+  background: var(--sub-color);
+  color: black;
+  width: 110px;
+}
+
+.n-account .modal-content-btn.out {
+  position: absolute;
+  background: var(--text-grey);
+  color: #fff;
+  width: 90px;
+  right: 30px;
+}
+
+.n-account .modal-content-btn:hover {
+  color: var(--sub-color);
+  background: var(--main-color);
+}
+
+.n-account .card-singel.left-top .avatar-container #modal-toggle-1:checked ~ .modal-backdrop {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  visibility: visible;
+  opacity: 1;
+}
+
+.n-account .card-singel.left-top .avatar-container #modal-toggle-1:checked ~ .modal-content {
+  display: block;
+  opacity: 1;
+  max-width: 600px;
+  width: 600px;
+  height: 680px;
+  padding: 10px 30px;
+  position: fixed;
+  left: calc(50% - 300px);
+  top: 12%;
+  border-radius: 10px;
+  pointer-events: auto;
+  cursor: auto;
+  visibility: visible;
+}
+
+.n-account .card-singel.left-top div:last-child {
+  padding-top: 15px;
+}
+
+.n-account .card-singel.left-top div:last-child span {
+  color: var(--text-grey);
+}
+
+.n-account .card-singel.left-top .avatar.small:hover {
+  border: 5px solid var(--text-menu);
+}
+
+
+
+.n-account .card-singel.right-top .account-grid {
+  margin-left: 1.5rem;
+  font-size: 1rem;
+}
+
+.n-account .card-singel.right-top .account-grid td {
+  font-size: 1rem;
+}
+.n-account .card-singel.right-top .account-grid td:not(:first-child) {
+  padding-left: 5rem;
+}
+.n-account .card-singel.right-top .account-grid input[type="text"],
+.n-account .card-singel.right-top .account-grid input[type="password"] {
+  width: 80%;
+}
+.n-account .card-singel.right-top .account-grid input[type="button"]:hover {
+  background: var(--main-color);
+}
+
+.n-account .card-singel.right-bottom .infor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.n-account .card-singel.right-bottom .infor-grid .content {
+  border-right: 1px solid var(--text-sub);
+}
+
+.n-account .card-singel.right-bottom .infor-grid .content:last-child {
+  border-right: none;
+}
+
+.n-account .card-singel.right-bottom .infor-grid .content {
+  font-size: 0.85rem;
+}
+
+.n-account .card-singel.right-bottom .content p {
+  display: block;
+}
+
+.n-account .card-singel.right-bottom .content p input {
+  display: flex;
+  width: 95%;
+}
+
+.n-account .card-singel.right-bottom::-webkit-scrollbar-track {
+  background: visible !important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.n-account .card-singel.right-bottom::-webkit-scrollbar-thumb {
+  background: var(--text-menu);
+  border-radius: 20px 20px 20px 20px;
+}
+
+.n-account .card-singel.left-bottom .card-body{
+    display: flex;
+    gap: .5rem;
+}
+.n-account .card-singel.left-bottom .card-body input {
+    align-self: flex-end;
+}
