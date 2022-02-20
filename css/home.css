@@ -8,7 +8,6 @@
   z-index: 100;
 }
 
-
 .sidebar-brand {
   padding: 1rem 0rem 1rem 1rem;
   height: 64px;
@@ -32,7 +31,7 @@
 .sidebar-menu {
   overflow: auto;
   height: 100%;
-} 
+}
 
 .sidebar-menu a {
   width: 100%;
@@ -80,7 +79,6 @@
 
 /* thẻ đầu bắt đầu */
 header {
-  
   display: flex;
   justify-content: space-between;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -94,7 +92,6 @@ header {
 header h2 {
   color: #222;
 }
-
 
 /* .search-wrapper {
     border: 2px solid rgb(0, 0, 0);
@@ -155,10 +152,9 @@ header h2 {
   top: 4rem;
   background: rgba(255, 204, 204, 0.3);
   backdrop-filter: blur(10px); /* This will produce the blur */
- 
+
   border: 2px solid var(--text-trans-grey);
-  padding-top: .75rem;
- 
+  padding-top: 0.75rem;
 }
 
 .user-wrapper li {
@@ -200,4 +196,204 @@ header h2 {
 .user-wrapper span {
   display: inline-block;
   font-size: 1rem;
+}
+
+main {
+  position: relative;
+  margin: 5rem 1rem 0rem 15.5rem;
+  overflow: auto;
+  z-index: 0;
+  padding: 0rem 1rem;
+  min-height: calc(100vh - 106px);
+  color: #222;
+  overflow: visible;
+
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  
+}
+
+.card-single {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px); /* This will produce the blur */
+  box-shadow: 0 0 80px rgb(0, 0, 0);
+    border: 1px solid var(--sub-trans);
+  border: 1px solid var(--sub-trans-color);
+
+  color: #fff;
+  padding: 1rem;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.card-flex {
+  display: grid;
+  grid-template-columns: 70% auto;
+}
+
+.card-head span {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.card-head small {
+  font-weight: 600;
+  color: #fff;
+}
+
+.card-info h2 {
+  font-size: 2.2rem;
+  color: var(--sub-color);
+}
+
+.card-chart span {
+  font-size: 5rem;
+}
+
+.card-chart.x span {
+  color: seagreen;
+}
+
+.card-chart.d span {
+  color: rgb(238, 74, 45);
+}
+
+.card-chart.v span {
+  color: rgb(198, 206, 84);
+}
+
+.recent-grid {
+  height: 100%;
+  margin-top: 3.5rem;
+  display: grid;
+  grid-gap: 3.25rem;
+  margin-left: 2rem;
+  grid-template-rows: 100%;
+  grid-template-columns: 65.5% auto;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px); /* This will produce the blur */
+  box-shadow: 0 0 80px rgb(0, 0, 0);
+  border: 1px solid var(--sub-trans-color);
+  color: #fff;
+  border-radius: 10px;
+  height: 100%;
+}
+.card-body{
+  padding: 1rem;
+}
+.card.security {
+  margin-top: 1rem;
+  background: rgb(241, 212, 212);
+  border-radius: 10px;
+}
+
+.card-header {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+    border-bottom: 1px solid var(--sub-color);
+
+}
+
+table {
+  border-collapse: collapse;
+  color: #fff;
+  
+}
+
+thead tr {
+  border-top: 1px solid var(--sub-trans-color);
+  border-bottom: 1px solid var(--sub-trans-color);
+}
+
+thead td {
+  font-weight: 700;
+  text-align: center;
+  color: var(--sub-color);
+
+}
+
+td {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+    color: #fff;
+
+}
+
+td .status {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+tbody tr {
+  text-align: center;
+}
+
+.table-responsive {
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 100%;
+  overflow-x: auto;
+  background-color: var(--sub-trans);
+  border: 1px solid var(--sub-trans-color);
+
+}
+
+.table-responsive input {
+  float: right;
+  width: 300px;
+  margin: 2rem;
+  font-size: 1.5rem;
+}
+
+.customer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.7rem;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.info img {
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.info h4 {
+  font-size: 0.8rem;
+  font-weight: 700;
+    color: #fff;
+
+}
+
+.info small {
+  font-weight: 600;
+    color: #fff;
+
+}
+
+.contact span {
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-left: 0.5rem;
+    color: #fff;
+
 }
