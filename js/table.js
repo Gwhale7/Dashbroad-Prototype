@@ -1,4 +1,22 @@
 $(document).ready(function () {
+  $("#table-small").DataTable({
+    info: false,
+    lengthChange: false,
+    paging: false,
+    oLanguage: {
+      sSearch: "",
+    },
+    scrollX: true,
+    scrollY: "calc(100vh - 794px)",
+    scrollCollapse: false,
+  });
+  $("#modal-toggle-small-table").click(function () {
+      $("#tab-4").prop("checked", true);
+      setTimeout(function () {
+        $("#table-small").DataTable().columns.adjust();
+      }, 1);
+
+    });
   $("#table").DataTable({
     info: false,
     lengthChange: false,

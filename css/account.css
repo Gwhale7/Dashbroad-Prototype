@@ -347,9 +347,11 @@
   width: 600px;
   height: 680px;
   padding: 10px 30px;
-  position: fixed;
-  left: calc(50% - 300px);
-  top: 12%;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 10px;
   pointer-events: auto;
   cursor: auto;

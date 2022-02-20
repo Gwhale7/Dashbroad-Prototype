@@ -124,14 +124,15 @@
 .card-singel.left-top .avatar-container #modal-toggle-1:checked ~ .modal-content {
   display: block;
   opacity: 1;
- 
   max-width: 600px;
   width: 600px;
   height: 680px;
   padding: 10px 30px;
-  position: fixed;
-  left: calc(50% - 300px);
-  top: 12%;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 10px;
   pointer-events: auto;
   cursor: auto;
@@ -219,7 +220,7 @@
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: 20% auto;
-  height: calc(100vh - 380px);
+  height: 100%;
   padding: 1rem;
 }
 
@@ -253,7 +254,6 @@
   border-radius: 10px;
   background: var(--sub-trans);
   border: 1px solid var(--sub-color);
-  border-radius: 10px;
 }
 
 #tab-4:checked ~ .security.right .secur-content.t-4,

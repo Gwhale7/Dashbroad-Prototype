@@ -119,7 +119,7 @@
               <li class="tab">
                 <label for="tab1">Thông tin tài khoản</label>
               </li>
-              <li class="tab">
+              <li id="modal-toggle-small-table" class="tab">
                 <label for="tab2">Bảo mật tài khoản</label>
               </li>
               <li class="tab">
@@ -379,7 +379,7 @@
                 <div class="security left">
                   <ul class="security-tabs">
                     <li class="security-tab">
-                      <label for="tab-4">.</label>
+                      <label for="tab-4"></label>
                     </li>
                     <li class="security-tab">
                       <label class="tab-5" for="tab-5">Thay đổi mật khẩu</label>
@@ -450,39 +450,60 @@
                     </div>
                     <div class="card-header">
                       <h3>Lịch Sử Đăng Nhập</h3>
-                      <button>
+                      <!-- <button>
                         Hiển thị thêm <span class="las la-arrow-right"> </span>
-                      </button>
+                      </button> -->
                     </div>
                     <div class="card-content">
-                      <div class="history-security">
-                        <table width="80%">
-                          <thead>
-                            <tr>
-                              <td>IP</td>
-                              <td>Quốc Gia</td>
-                              <td>Ngày Tháng</td>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
+                       <div class="card-body body-card">
+                    <div class="card-table body-card">
+                      <table id="table-small" class="" style="width: 100%">
+                        <thead>
+                          <tr>
+                            <th>STT</th>
+                            <th>IP</th>
+                            <th>Quốc Gia</th>
+                            <th>Ngày Tháng</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                             <td></td>
                               <td>113.172.167.255</td>
                               <td>VN</td>
                               <td>2021-12-06 18:43:58 GMT+7</td>
                             </tr>
                             <tr>
+                             <td></td>
                               <td>113.172.167.255</td>
                               <td>VN</td>
                               <td>2021-12-06 18:43:58 GMT+7</td>
                             </tr>
                             <tr>
+                              <td></td>
                               <td>113.172.167.255</td>
                               <td>VN</td>
                               <td>2021-12-06 18:43:58 GMT+7</td>
                             </tr>
-                          </tbody>
-                        </table>
-                      </div>
+                            <tr>
+                              <td></td>
+                              <td>113.172.167.255</td>
+                              <td>VN</td>
+                              <td>2021-12-06 18:43:58 GMT+7</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                             <th>STT</th>
+                            <th>IP</th>
+                            <th>Quốc Gia</th>
+                            <th>Ngày Tháng</th>
+                          </tr>
+                        </tfoot>
+                      </table>
+                    </div>
+                  </div>
+                   
                     </div>
                   </div>
                   <div class="secur-content t-5">
@@ -669,5 +690,8 @@
       </main>
     </div>
     <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="js/table.js"></script>
   </body>
 </html>
